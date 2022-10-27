@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yeni Sepet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Urun başlangıç-->
+    <div class="d-flex">
+        <div class="col-8 row">
+
+
+            <div class="card col-5 m-4" id="urun1">
+                <img src="./img/resim.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Macbook pro</h5>
+                    <h6 class="card-price">200 TL</h6>
+                    <h6 hidden class="card-id">1</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a class="btn btn-primary" type="button" onclick="basketAdd(event)">Sepete Ekle</a>
+                </div>
+            </div>
+
+            <div class="card col-5 m-4" id="urun2">
+                <img src="./img/resim.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bella pro</h5>
+                    <h6 class="card-price">100 TL</h6>
+                    <h6 hidden class="card-id">2</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a class="btn btn-primary" type="button" onclick="basketAdd2(event)">Sepete Ekle</a>
+                </div>
+            </div>
+
+            <div class="card col-5 m-4" id="urun3">
+                <img src="./img/resim.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Zilla pro</h5>
+                    <h6 class="card-price">500 TL</h6>
+                    <h6 hidden class="card-id">3</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a class="btn btn-primary" type="button" onclick="basketAdd3(event)">Sepete Ekle</a>
+                </div>
+            </div>
+
+            <div class="card col-5 m-4" id="urun4">
+                <img src="./img/resim.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sella pro</h5>
+                    <h6 class="card-price">600 TL</h6>
+                    <h6 hidden class="card-id">3</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a class="btn btn-primary" type="button" onclick="basketAdd4(event)">Sepete Ekle</a>
+                </div>
+            </div>
+
+        </div>
+        <!--Urun bitiş-->
+
+        <!--Tablo başlangıç-->
+        <div class="col-4 ">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Ürün</th>
+                        <th scope="col">Adet</th>
+                        <th scope="col">Toplam</th>
+                    </tr>
+
+                </thead>
+                <tbody id="sepet-urunleri">
+                    <tr>
+
+                        <td hidden colspan="5">Sepetinizde ürün bulunamadı ! ! !</td>
+
+                    </tr>
+                </tbody>
+
+                <tbody id="sepet-urunleri2">
+                    <tr>
+
+                        <td hidden colspan="5">Sepetinizde ürün bulunamadı ! ! !</td>
+
+                    </tr>
+                </tbody>
+
+                <tbody id="sepet-urunleri3">
+                    <tr>
+
+                        <td hidden colspan="5">Sepetinizde ürün bulunamadı ! ! !</td>
+
+                    </tr>
+                </tbody>
+
+                <tbody id="sepet-urunleri4">
+                    <tr>
+
+                        <td hidden colspan="5">Sepetinizde ürün bulunamadı ! ! !</td>
+
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <th scope="col">Toplam Tutar:</th>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <!--Tablo bitiş-->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
